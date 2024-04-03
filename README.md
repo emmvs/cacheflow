@@ -1,24 +1,44 @@
-# README
+### CacheFlow WebApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+Cacheflow is a Ruby on Rails application built for the Finanzfluss Login/Logout task. It enables users to register, login, logout, and change their password.
 
-Things you may want to cover:
+## Prerequisites
+- Ruby 3.1.2
+- Rails 7.1.3
+- PostgreSQL
 
-* Ruby version
+## Installation
+1. Clone this repository
+```sh 
+git clone git@gitlab.com:finanzfluss-group/work-trials/login-logout-ruby-app/ff-work-trial-emma-anna-agneta-ruenzel.git
+```
 
-* System dependencies
+2. Install Dependencies
+```sh
+bundle install
+```
 
-* Configuration
+3. Setup the Database
+```sh
+rails db:create
+rails db:migrate
+```
 
-* Database creation
+4. Start the server
+```sh
+rails s
+```
 
-* Database initialization
+5. Visit [\[localhost:3000]](http://localhost:3000)
 
-* How to run the test suite
+## Testing
+```sh
+rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-* Deployment instructions
-
-* ...
+## Author
+@emmvs
